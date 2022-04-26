@@ -2,24 +2,24 @@ pageTransition = () => {
   var timeline = gsap.timeline();
 
   timeline.to("header", {
-    zIndex: 1,
+    zIndex: 1
   });
 
   timeline.to(".page-transition", {
     duration: 1,
     height: "100%",
-    top: "0%",
+    top: "0%"
   });
 
   timeline.to(".page-transition", {
     duration: 0.8,
     height: "100%",
     top: "100%",
-    delay: 0.3,
+    delay: 0.3
   });
 
   timeline.set(".page-transition", {
-    top: "-100%",
+    top: "-100%"
   });
 };
 
@@ -31,9 +31,9 @@ mainAnimation = () => {
     y: 30,
     opacity: 0,
     stagger: {
-      amount: 0.4,
+      amount: 0.4
     },
-    delay: 0.8,
+    delay: 0.8
   });
 };
 
@@ -46,6 +46,9 @@ delay = (n) => {
   });
 };
 
+// Barba.Pjax.start();
+// Barba.Pjax.init();
+// Barba.Prefetch.init();
 barba.init({
   sync: true,
   transitions: [
@@ -63,7 +66,7 @@ barba.init({
 
       async once(data) {
         mainAnimation();
-      },
-    },
-  ],
+      }
+    }
+  ]
 });
