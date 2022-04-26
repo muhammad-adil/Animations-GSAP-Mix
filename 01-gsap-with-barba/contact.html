@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css" />
     <!-- barbajs and gsap  -->
-    <script src="https://unpkg.com/@barba/core"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-</head>
-<body data-barba="wrapper">
+    <!-- <script src="https://unpkg.com/@barba/core"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script> -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/0.0.2/barba.min.js"
+      integrity="sha512-j0ThLeHF8KI1DZjV/vAJ0CKkDAMAsZbFA1KarA2jIfzAmXn3di3krSq9LJrv/gBVsUnouKqS/agIoQpxj/3Hkg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+      integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body data-barba="wrapper">
     <!-- loading screen  -->
     <div class="loader">
-        <div class="page-transition"></div>
+      <div class="page-transition"></div>
     </div>
     <!-- code from here  -->
     <main data-barba="container" data-barba-namespace="contact-section">
+      <header>
+        <div class="logo">LOGO</div>
+        <ul class="menu-items">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li class="active"><a href="./contact.html">Contact</a></li>
+        </ul>
+      </header>
 
-        <header>
-            <div class="logo">
-                LOGO
-            </div>
-            <ul class="menu-items">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="active"><a href="contact.html">Contact</a></li>    
-            <ul/>
-        </header>
-
-        <div class="container">
-            <h1>Contact Page</h1>
-        </div>
+      <div class="container">
+        <h1>Contact Page</h1>
+      </div>
     </main>
 
-    <script src="script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
