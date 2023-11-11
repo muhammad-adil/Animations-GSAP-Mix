@@ -22,4 +22,17 @@ gsap.from(".main-heading", {
     y: 50,
     color: "red",
     stagger: 0.5
+    // stagger: -0.5, to run it backward
+})
+
+// Yoyo box
+gsap.to("#yoyo-box", {
+    x:1000,
+    // y:-200,
+    duration:3,
+    delay:1,
+    rotate:360,
+    repeat:2, // -1 For infinite repeattition
+    yoyo:true
+
 })
