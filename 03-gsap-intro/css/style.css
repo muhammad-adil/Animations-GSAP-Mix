@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap');
 
 
+*{
+    font-family: "Playwrite ES", cursive;
+}
+
+html, body{
+    /* margin: 0 auto; */
+    background-color: #111;
+} 
+
 
 .main-heading{
     font-size: 24px;
@@ -28,3 +37,19 @@
     height: 200px;
 }
 
+/* nav for timeline */
+.bg-tomato{
+    background-color: tomato;
+}
+#nav{
+    color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    margin-top: 10px;
+}
+#sub-nav{
+    display: flex;
+    gap: 20px;
+}
