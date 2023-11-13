@@ -25,6 +25,20 @@ gsap.from("#sec-2 #box", {
     }
 })
 
+
+gsap.to("#sec-2-e h2", {
+    transform:"translateX(-150%)",
+    scrollTrigger:{
+        trigger:"#sec-2-e",
+        scroller:"body",
+        start:"top 0%",
+        end:"top -175%",
+        scrub: 2,
+        pin:true,
+        markers:true
+    }
+})
+
 gsap.from("#sec-3 #box", {
     scale:0,
     delay:1,

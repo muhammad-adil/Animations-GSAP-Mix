@@ -13,10 +13,13 @@ html, body{
     width: 100%;
     /* margin: 0 auto; */
     background-color: #111;
+}
+body{
+    overflow-x: hidden;
 } 
 
 /* Custom CSS */
-#sec-1, #sec-2, #sec-3 {
+#sec-1, #sec-2, #sec-3, #sec-4 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,8 +33,23 @@ html, body{
 #sec-2 {
     background-color: #9d9d9d;
 }
+#sec-2-e {
+    background-color: #000000;
+    height: 100%;
+    width: 100%;   
+}
+#sec-2-e h2 {
+    color: #f1dd41;
+    font-size: 40vw;
+    /* font-weight: 700; */
+    font-family: "Playwrite ES", cursive;
+    /* text-transform: uppercase; */
+}
 #sec-3 {
     background-color: #026c4a;
+}
+#sec-4 {
+    background-color: #f1dd41;
 }
 #box{
     height: 300px;
