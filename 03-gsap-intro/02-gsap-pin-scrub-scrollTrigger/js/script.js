@@ -35,7 +35,7 @@ gsap.to("#sec-2-e h2", {
         end:"top -175%",
         scrub: 2,
         pin:true,
-        markers:true
+        // markers:true
     }
 })
 
