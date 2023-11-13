@@ -14,9 +14,14 @@ html, body{
     margin: 0 auto;
     background-color: #111;
 }
+
 #main{
     height: 100%;
     width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #cursor {
@@ -26,3 +31,36 @@ html, body{
     position: fixed;
 }
 
+#cursor-circle {
+    height: 22px;
+    width: 22px;
+    background-color: #fff;
+    position: fixed;
+    border-radius: 50%; 
+    font-size: 4px;   
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 8;
+}
+
+#image {
+    width: 70vw;
+    height: 30vw;
+    position: relative;
+    background-color: #2648b7;
+}
+
+#image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#overlay {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
+}
